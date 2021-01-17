@@ -1,0 +1,22 @@
+:root {
+  --basic: white;
+  --lavendar: #9370DB;
+}
+.default-style {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  padding: 1.5%;
+  font-size: 1rem;
+}
+.default-style:hover {
+  cursor: pointer;
+}
+
+.basic {
+  background-color: var(--basic);
+}
+.colorful { 
+  background-color: var(--lavendar);
+  border: 2px solid lightcoral; 
+}
