@@ -4,14 +4,22 @@ import MyButton from './components/button/my-button.component';
 
 function App() {
   // temporarily storing button prop data here
-  const basicButton = {
+  const basic = {
     text: "I'm Basic",
     type: 'basic'
   };
-  const colorButton = {
+  const colorful = {
     text: "I'm Colorful",
     type: "colorful"
-  }
+  };
+    const roundedCorners = {
+    text: "I'm Rounded",
+    type: "rounded-corners"
+  };
+  const gradiant = {
+    text: "I'm Radiant",
+    type: "gradiant"
+  };
 
 
   return (
@@ -20,10 +28,10 @@ function App() {
       <div className="buttons">
         <p style={{ fontWeight: 'bolder', textDecoration: 'underline', fontVariant: 'small-caps' }}>Here are some buttons</p>
         <div className="buttons-grid">
-          <MyButton type={basicButton.type} text={basicButton.text} />
-          <MyButton type={colorButton.type} text={colorButton.text} />
-          <MyButton type={colorButton.type} text={colorButton.text} />
-          <MyButton type={colorButton.type} text={colorButton.text} />
+          <MyButton type={basic.type} text={basic.text} />
+          <MyButton type={colorful.type} text={colorful.text} />
+          <MyButton type={roundedCorners.type} text={roundedCorners.text} />
+          <MyButton type={gradiant.type} text={gradiant.text} />
         </div>
       </div>
     </div>

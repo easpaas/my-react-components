@@ -1,6 +1,7 @@
 :root {
   --basic: white;
   --lavendar: #9370DB;
+  --og: #67032F;
 }
 .default-style {
   text-align: center;
@@ -8,15 +9,27 @@
   margin: 0 auto;
   padding: 1.5%;
   font-size: 1rem;
+  font-weight: 500;
 }
 .default-style:hover {
   cursor: pointer;
 }
 
+/* BUTTON STYLES BASED ON TYPE */
 .basic {
   background-color: var(--basic);
 }
 .colorful { 
   background-color: var(--lavendar);
-  border: 2px solid lightcoral; 
+  border: 2px solid var(--og); 
+}
+.rounded-corners {
+  color: var(--og);
+  border: 2px solid var(--lavendar);
+  border-radius: 10px;
+}
+.gradiant {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  border: 2px solid var(--lavendar);
 }
